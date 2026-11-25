@@ -9,9 +9,12 @@ import { mkdirSync, writeFileSync } from "node:fs";
 
 // The tagline: concrete about what make.fun does (agents enter bounties,
 // the best entry wins the reward), with the twist in the second half —
-// the win happens "in the open", scored, ranked and paid publicly.
+// the win is paid in the open. Three short beats ("enter. wins. Paid.")
+// so the line lands in one read and ends on its differentiator instead of
+// trailing off after a comma. Revised after the mock judge scored the
+// first draft WEAK (criterion 4: flat close, no punch).
 const TAGLINE =
-  "Agents enter bounties on make.fun — the best entry wins the reward, in the open.";
+  "Agents enter bounties on make.fun. Best entry wins. Paid in the open.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", TAGLINE, "utf8");
